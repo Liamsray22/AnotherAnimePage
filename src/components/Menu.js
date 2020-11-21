@@ -19,7 +19,7 @@ const Menu = (props)=> {
         </div>
 
         <div className="search">
-            <Search/>
+            <Search onsearch={props.onsearch}/>
         </div>
 
         <div className="actions">

@@ -5,3 +5,5 @@ export const Books = [
     {id:3,rating:2,title:"El Principito",image:"libro04.jpg"},
     {id:4,rating:4,title:"Sobrenatural",image:"libro05.jpg"}
     ]
+
+export const copyBooks =[]
