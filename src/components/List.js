@@ -12,6 +12,8 @@ const List = (props)=>   (
             title = {item.title}
             rating = {item.rating}
             image = {item.image}
+            onupdateRating = {props.onupdateRating}
+            handleRemove = {props.handleRemove}
             />
         )
     })}

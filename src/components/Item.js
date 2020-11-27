@@ -23,6 +23,11 @@ const Item = (props)=>   {
         const rating  = parseInt(e.target.value)
         setRating(e.target.value)
         setStar(Array(parseInt(rating)).fill(0))
+        props.onupdateRating({id:id,title:title,image:image,rating:rating})
+    }
+
+    function handleRemove(e){
+        props.handleRemove(props.id)
     }
     
     return(
@@ -51,7 +56,7 @@ const Item = (props)=>   {
         </select>
     </div>
     <div className="actions">
-        <button>Eliminar</button>
+        <button onClick={handleRemove}>Eliminar</button>
     </div>
 </div>
 

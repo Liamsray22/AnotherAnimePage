@@ -7,22 +7,25 @@ const PanelAdd = (props)=>
     const [image, setImage] = useState('')
     const [rating, setRating] = useState(1)
 
-     function onsubmit(e){
-        e.preventDefault()
-        props.onadd({title:title,image:image,rating:rating })
-        props.oncancel()
-    }
 
-    function onchangeTitle(e){
+    const onchangeTitle=(e)=>{
         setTitle(e.target.value)
     }
-    function onchangeImage(e){
+    const onchangeImage=(e)=>{
         setImage(e.target.value)
     }
-    function onchangeRating(e){
+    const onchangeRating=(e)=>{
         const ratingu = parseInt(e.target.value)
         setRating(ratingu)
     }
+    const onsubmit=(e)=>{
+        e.preventDefault()
+        const titulo = title
+        const imagen = image
+        const rat = rating
+        props.onadd({title:titulo,image:imagen,rating:rat})
+        props.oncancel()
+    } 
 return (
 
 <div className="new-item-panel-container">
