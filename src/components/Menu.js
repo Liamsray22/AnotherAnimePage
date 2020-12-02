@@ -12,7 +12,7 @@ const Menu = (props)=> {
         setPanel(!panel)
     }
     return(
-<div className="container">
+<div className="containerr">
     <div className="subcontainer">
         <div className="logo">
             {props.title}

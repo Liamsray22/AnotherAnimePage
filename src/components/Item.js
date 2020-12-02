@@ -33,7 +33,7 @@ const Item = (props)=>   {
     return(
 <div className="item">
     <div className="image">
-        <img src={'img/'+ image} width="100%"/>
+        <img src={image} width="100%"/>
     </div>
     <div className="title">
         {title}
@@ -55,9 +55,31 @@ const Item = (props)=>   {
             <option value="5">5</option>
         </select>
     </div>
-    <div className="actions">
+    
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target={"#exampleModal"+ id}>
+  Eliminar
+</button>
+
+<div class="modal fade" id={"exampleModal" + id} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar {title}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Esta Seguro que desea eliminar el anime {title} ?
+      </div>
+      <div class="modal-footer">
+        <div className="actions">
         <button onClick={handleRemove}>Eliminar</button>
+    </div>      
     </div>
+    </div>
+  </div>
+</div>
 </div>
 
 )

@@ -32,13 +32,13 @@ return (
                 <div className="new-item-panel">
                     <form onSubmit={onsubmit}>
                         <p>
-                        <label>Título del libro</label><br />
+                        <label>Nombre del anime</label><br />
                         <input onChange={onchangeTitle} type="text" name="title" className="input" />
                         </p>
 
                         <p>
-                        <label>Nombre de imagen</label><br />
-                        <input onChange={onchangeImage} type="text" name="image" className="input"/>
+                        <label>Hipervinculo de la imagen</label><br />
+                        <input onChange={onchangeImage} type="text" name="image" className="input" placeholder="Link de una imagen"/>
                         </p>
 
                         <p>
@@ -51,7 +51,7 @@ return (
                             <option value="5">5</option>
                         </select>
                         </p>
-                        <input type="submit" className="button btn-blue" value="Registrar libro" />
+                        <input type="submit" className="button btn-blue" value="Ingresar Anime" />
                     </form>
                     <button onClick={props.oncancel} className="button btn-normal">Cancelar</button>
 

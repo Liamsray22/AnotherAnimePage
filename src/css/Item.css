@@ -3,7 +3,7 @@
     display: inline-block;
     padding: 10px;
     margin: 15px;
-    width: 200px;
+    width: 350px;
     vertical-align: top;
 }
 .item .image img{
@@ -17,7 +17,7 @@
 }
 
 .item .actions{
-    width: 100%;
+    width: 100px;
     border-top: solid 1px #bbb;
     padding: 5px 0;
     margin-top: 10px;

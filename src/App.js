@@ -66,7 +66,7 @@ function App() {
   return (
     
     <>
-      <Menu title="Feriel Libro" onadd={onAdd} onsearch={handleSearch}/>
+      <Menu title="Another Anime Page" onadd={onAdd} onsearch={handleSearch}/>
       <List items ={copyData} onupdateRating={handleUpdateRating} handleRemove={onRemove}/>
     </>
   );
