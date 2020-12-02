@@ -9,11 +9,14 @@ function App() {
   const [data, setData] = useState(Books)
   const [copyData, setCopyData] = useState(copyBooks)
  
-   const initBooks = ()=>{
+   function initBooks (){
    setCopyData([...data])
   }
 
   useEffect(()=>{
+    function initBooks (){
+   setCopyData([...data])
+  }
     initBooks()
   },[])
 
@@ -57,7 +60,7 @@ function App() {
 
   const onRemove = (id)=>{
     let temp = [...data]
-    const res = temp.filter(item=> item.id != id)
+    const res = temp.filter(item=> item.id !== id)
     setData([...res])
     initBooks()
  

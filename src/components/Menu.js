@@ -25,7 +25,7 @@ const Menu = (props)=> {
         </div>
 
         <div className="actions">
-            <button onClick={Add} className="button btn-blue">+ Add</button>
+            <button onClick={Add} className="button btn-blue">+ Agregar Anime</button>
         </div>
     </div>
     {
