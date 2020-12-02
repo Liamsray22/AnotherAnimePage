@@ -4,6 +4,7 @@ import PanelAdd from './PanelAdd'
 import '../css/Menu.css';
 
 
+
 const Menu = (props)=> {  
     
     const [panel,setPanel] = useState(false)
@@ -15,6 +16,7 @@ const Menu = (props)=> {
 <div className="containerr">
     <div className="subcontainer">
         <div className="logo">
+            <img src="/img/logo.png" width="25%"/>
             {props.title}
         </div>
 
