@@ -6,6 +6,68 @@
     /* position: absolute; */
     margin: 0 auto;
 }
+
+
+.menu-icon{
+    display: none;
+}
+
+@media only screen and (max-width:600px)
+{
+    .containerr{
+        background-color: rgb(19, 42, 71);
+    border-bottom: solid 1px #ccc;
+    padding: 10px;
+    width: 100%;
+    /* position: absolute; */
+    margin: 0 auto;
+    }
+
+
+    .containerr .subcontainer div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        vertical-align: middle;
+    }
+
+    .menu-icon{
+        display: block;
+        position: relative;
+         /* top: 0; */
+        /*left: 0; */
+        margin-bottom: 8%;
+        margin-left: 98%;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .containerr .subcontainer_active{
+       left: 0;
+       opacity: 1;
+       transition: all 0.5s ease;
+       z-index: 1;
+
+
+    }
+
+    
+} 
+.containerr .subcontainer_active div{
+    display: inline-block;
+    vertical-align: middle;
+
+
+ }
+
+
 .containerr .subcontainer{
     width: 100%;
     margin: 0 auto;

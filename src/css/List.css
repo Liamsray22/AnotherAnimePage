@@ -2,3 +2,12 @@
     width: 1300px;
     margin: 0 auto;
 }
+
+@media only screen and (max-width:600px)
+{
+    .list{
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+} 
